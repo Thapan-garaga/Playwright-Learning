@@ -1,0 +1,34 @@
+200
+OK
+APIResponse: 200 OK
+  Date: Sun, 23 Aug 2026 05:53:40 GMT
+  Content-Type: application/json;charset=UTF-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Server: cloudflare
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Vary: Origin
+  Vary: Access-Control-Request-Method
+  Vary: Access-Control-Request-Headers
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+  X-Frame-Options: DENY
+  cf-cache-status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=niSLQntQYCd%2F3h76kThtZzJg4BN5az0KfYAb5nW7b1Ue%2F37l4BY0Qm2vVP68zRliq%2FRPZLpNSuqFsEPN%2FsY7X3VpKnWs66hZW6kY%2FtVsLl682XqztBYVwv6MVyoK3qBtwE%2BVeEjlnjbZAK8ZsgsiugVe"}]}
+  Content-Encoding: br
+  CF-RAY: a2f7dbb63967fe86-SIN
+  alt-svc: h3=":443"; ma=86400
+{
+  id: 'ff8081819ff5b11001a02d2e8e027e16',
+  name: 'Apple MacBook Pro 16',
+  createdAt: 1787464420866,
+  data: {
+    year: 2019,
+    price: 1849.99,
+    'CPU model': 'Intel Core i9',
+    'Hard disk size': '1 TB'
+  }
+}

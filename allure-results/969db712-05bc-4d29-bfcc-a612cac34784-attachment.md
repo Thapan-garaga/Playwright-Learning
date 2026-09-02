@@ -1,0 +1,146 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ApiTest.spec.ts >> post api with key
+- Location: tests\ApiTest.spec.ts:115:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 404
+```
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "OK"
+Received: "Not Found"
+```
+
+# Test source
+
+```ts
+  23  | 
+  24  | const putpayload = {
+  25  |   "name": "Apple MacBook Pro 18",
+  26  |   "data": {
+  27  |     "year": 2022,
+  28  |     "price": 1899.99,
+  29  |     "CPU model": "Intel Core i9",
+  30  |     "Hard disk size": "2 TB"
+  31  |   }
+  32  | };
+  33  | 
+  34  | // test.beforeEach("Before each test case", async ({playwright}) => {
+  35  | 
+  36  | //   apiContext = await playwright.request.newContext();
+  37  | //   apiUtils = new ApiUtils(apiContext);
+  38  | 
+  39  | // } );
+  40  | 
+  41  | 
+  42  | test("Create Object", async ({playwright}) => {
+  43  | 
+  44  |     apiContext = await playwright.request.newContext();
+  45  |     apiUtils = new ApiUtils(apiContext);
+  46  |     apiResponse = await apiUtils.createObject(url, postpayload);
+  47  | 
+  48  |     console.log(apiResponse.status());
+  49  |     expect.soft(apiResponse.statusText()).toBe('OK');
+  50  | 
+  51  |     response = await apiResponse.json();
+  52  |     jsonresponse = await apiResponse.json();
+  53  | 
+  54  |     console.log(response);
+  55  |     console.log(response.name);
+  56  |     console.log(postpayload.name);
+  57  |     expect.soft(response.name).toBe(postpayload.name);
+  58  | 
+  59  |     expect.soft(response.data.year).toBe(postpayload.data.year);
+  60  |     expect.soft(response.data.price).toBe(postpayload.data.price);
+  61  |     // expect.soft(response.data["CPU model"]);
+  62  |     expect.soft(response.data["CPU model"]).toBe(postpayload.data["CPU model"]);
+  63  | 
+  64  | 
+  65  | });
+  66  | 
+  67  | // test("Get One Object", async ({playwright}) => {
+  68  | 
+  69  | //     apiContext = await playwright.request.newContext();
+  70  | //     apiResponse = await apiUtils.geSingleObject(url, response.id);
+  71  | //     // response = apiResponse.json();
+  72  | 
+  73  | //     expect.soft(apiResponse.status()).toBe(200);
+  74  | //     expect.soft(apiResponse.statusText()).toBe('OK');
+  75  | 
+  76  | //     response = apiResponse.json();
+  77  | //     console.log(response);
+  78  | 
+  79  | 
+  80  | 
+  81  | // });
+  82  | 
+  83  | // test("Update the Object", async ({playwright}) => {
+  84  | 
+  85  | //     apiContext = await playwright.request.newContext();
+  86  | //     // apiUtils = new ApiUtils(apiContext);
+  87  | //     apiResponse = await apiUtils.updateObject(url, jsonresponse.id, putpayload);
+  88  | 
+  89  | //     console.log(apiResponse.status());
+  90  | //     expect.soft(apiResponse.statusText()).toBe('OK');
+  91  | 
+  92  | //     response = await apiResponse.json();
+  93  | 
+  94  | //     console.log(response);
+  95  | //     console.log(response.name);
+  96  | //     console.log(putpayload.name);
+  97  | //     expect.soft(response.name).toBe(putpayload.name);
+  98  | 
+  99  | //     expect.soft(response.data.year).toBe(putpayload.data.year);
+  100 | //     expect.soft(response.data.price).toBe(putpayload.data.price);
+  101 | //     // expect.soft(response.data["CPU model"]);
+  102 | //     expect.soft(response.data["CPU model"]).toBe(putpayload.data["CPU model"]);
+  103 | 
+  104 | 
+  105 | // });
+  106 | 
+  107 | // test("Delete Object", async ({playwright}) => {
+  108 | 
+  109 | //     apiContext = await playwright.request.newContext();
+  110 | //     apiResponse = await apiUtils.deleteObject(url, response.id);
+  111 | 
+  112 | 
+  113 | // });
+  114 | 
+  115 | test("post api with key", async ({playwright}) => {
+  116 |    
+  117 |   apiContext = await playwright.request.newContext();
+  118 |   apiUtils = new ApiUtils(apiContext);
+  119 |   
+  120 |   apiResponse = await apiUtils.creteObjectUsingKey(`${baseUrl}${productCollection}`, postpayload);
+  121 | 
+  122 |   expect.soft(apiResponse.status()).toBe(200);
+> 123 |   expect.soft(apiResponse.statusText()).toBe('OK');
+      |                                         ^ Error: expect(received).toBe(expected) // Object.is equality
+  124 |   response = apiResponse.json();
+  125 |   console.log(response);
+  126 | });
+  127 | 
+  128 | // test.afterEach("Tear down", async () => {
+  129 | 
+  130 | //     // apiUtils = null;
+  131 | 
+  132 | 
+  133 | // });
+  134 | 
+  135 | 
+  136 | 
+```

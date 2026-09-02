@@ -1,0 +1,28 @@
+{
+  "name": "PlawrightLearning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Test:Reg": "npx playwright test",
+    "PlaceOrder": "npx playwright test 22purchase.spec.ts",
+    "Tg:smoke": "npx playwright test 21tagging.spec.ts --grep @smoke",
+    "Tg:smokeAndsanity": "npx playwright test 21tagging.spec.ts --grep @sanity"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.5",
+    "allure-playwright": "^3.10.2",
+    "csv-parse": "^7.0.2",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "node-js": "^1.0.0",
+    "ts-node": "^10.9.2"
+  }
+}

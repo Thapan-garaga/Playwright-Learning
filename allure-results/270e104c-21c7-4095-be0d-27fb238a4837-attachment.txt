@@ -1,0 +1,14 @@
+200
+{
+  id: 'ff808181a04ccf2d01a04dd734b60731',
+  name: 'Apple MacBook Pro 56',
+  createdAt: 1788012344502,
+  data: {
+    year: 2019,
+    price: 1849.99,
+    'CPU model': 'Intel Core i9',
+    'Hard disk size': '1 TB'
+  }
+}
+Apple MacBook Pro 56
+Apple MacBook Pro 56

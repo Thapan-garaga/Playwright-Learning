@@ -1,0 +1,14 @@
+200
+{
+  id: 'ff808181a04ccf2d01a04ddee504077b',
+  name: 'Apple iphone Pro 56',
+  createdAt: 1788012848388,
+  data: {
+    year: 2019,
+    price: 1849.99,
+    'CPU model': 'Intel Core i9',
+    'Hard disk size': '1 TB'
+  }
+}
+Apple iphone Pro 56
+Apple iphone Pro 56

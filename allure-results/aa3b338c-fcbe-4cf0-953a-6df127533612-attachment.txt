@@ -1,0 +1,8 @@
+{
+  id: 'ff8081819ff5b11001a02e7a2293014b',
+  name: 'Apple MacBook Pro 19',
+  createdAt: 1787486151315,
+  data: null
+}
+Apple MacBook Pro 19
+Apple MacBook Pro 19

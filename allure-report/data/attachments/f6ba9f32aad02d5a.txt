@@ -1,0 +1,18 @@
+The status is: 200
+OK
+{
+  id: 'ff8081819ff5b11001a02e764be70140',
+  name: 'Apple MacBook Pro 16',
+  createdAt: 1787485899751,
+  data: {
+    year: 2019,
+    price: 1849.99,
+    'CPU model': 'Intel Core i9',
+    'Hard disk size': '1 TB'
+  }
+}
+ff8081819ff5b11001a02e764be70140
+Apple MacBook Pro 16
+1849.99
+Intel Core i9
+1 TB

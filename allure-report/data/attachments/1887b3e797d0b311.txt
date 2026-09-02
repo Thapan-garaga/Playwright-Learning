@@ -1,0 +1,7 @@
+Total number of pages are: 3
+Title of the first page: Automation Testing Practice
+Title of the second page: Selenium
+Title of the third page: Fast and reliable end-to-end testing for modern web apps | Playwright
+Title of the second page after bringing to front: Selenium
+Title of the third page after bringing to front: Fast and reliable end-to-end testing for modern web apps | Playwright
+Title of the first page after bringing to front: Automation Testing Practice

@@ -1,0 +1,14 @@
+200
+{
+  id: 'ff8081819ff5b11001a032635b2f0887',
+  name: 'Apple MacBook Pro 18',
+  updatedAt: 1787551767783,
+  data: {
+    year: 2022,
+    price: 1899.99,
+    'CPU model': 'Intel Core i9',
+    'Hard disk size': '2 TB'
+  }
+}
+Apple MacBook Pro 18
+Apple MacBook Pro 18

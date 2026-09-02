@@ -1,0 +1,4 @@
+Total number of frames are: 3
+Left frame text is: LEFT
+Middle frame text is: MIDDLE
+Right frame text is: RIGHT

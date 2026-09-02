@@ -1,0 +1,5 @@
+{
+  id: 'ff808181a04ccf2d01a0501c3aa60e36',
+  name: 'Apple MacBook Pro 27',
+  data: { year: 2022, price: 1899.99, 'CPU model': 'Intel Core i9' }
+}
