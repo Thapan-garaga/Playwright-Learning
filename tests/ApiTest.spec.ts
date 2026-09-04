@@ -143,7 +143,7 @@ test("delete object using key", async ({playwright}) => {
   apiContext = await playwright.request.newContext();
   apiResponse = await apiUtils.deleteObjectwithKey(`${baseUrl}${productCollection}${response.id}`);
   console.log(await apiResponse.json());
-
+  
 
 });
 

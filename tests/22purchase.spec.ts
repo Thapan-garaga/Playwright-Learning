@@ -23,6 +23,8 @@ test("Login to client Application", async ({page}) => {
     let orderId = await placeOrderPage.getOrderId();
     await placeOrderPage.viewOrder(orderId);
 
+    
+
 
     await loginPage.logoutApp();
     // loginPage.login('Gomasa@1988');

@@ -24,3 +24,5 @@ test('test', async ({ page }) => {
   await page.locator('#droppable').click();
   await page.locator('#draggable').click();
 });
+
+test("test")
