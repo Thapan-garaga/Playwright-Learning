@@ -15,6 +15,7 @@ let POManager: PageObjectManager;
 
 // const loginData: any = JSON.parse(data);
 const readFiles: ReadFiles = new ReadFiles();
+
 // const loginData: any = readFiles.readJsonfile('./TestData/PlaceOrder.json');
 // const filePath = path.join(__dirname, '../TestData/PlaceOrder.xlsx');
 const loginData: any = readFiles.readExcelFile('./TestData/PlaceOrder.xlsx');
@@ -52,7 +53,7 @@ for (const {prodName, country} of loginData)
 
             
         });
-
+        
         test.afterEach("Test After Each", async () => {
 
             await POManager.loginpage.logoutApp();
